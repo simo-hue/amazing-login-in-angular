@@ -48,4 +48,18 @@ export class MioLoginComponent implements OnInit {
     }) 
   }  
 
+  autenticazione() {    
+    /* Controllo che i dati combacino */
+    if(this.password == this.utentiJson.password)
+    {
+      this.loginService.setUserData(this.username, this.password);
+      this.loginService.setAutorizzazione(true);
+      this.router.navigate(['/generatore']);
+    }
+    else {
+      this.username = "";
+      this.password = "";
+      this.loginFail = true;
+    }
+  }
 }
