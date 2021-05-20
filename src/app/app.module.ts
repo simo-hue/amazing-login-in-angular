@@ -10,6 +10,7 @@ import { RegistratiComponent } from './registrati/registrati.component';
 
 const LISTA_ROUTER = [
   {path:''  ,component:MioLoginComponent},
+  {path:'registrati'  ,component:RegistratiComponent},
 ];
 
 @NgModule({
