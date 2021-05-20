@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+import { LoginService } from '../common/login.service';
+import { HttpClient } from '@angular/common/http';
+import { User } from "./user";
+
 
 @Component({
   selector: 'app-mio-login',
