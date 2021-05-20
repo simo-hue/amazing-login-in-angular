@@ -1,1 +1,4 @@
 /* Add application styles & imports to this file! */
+body { background: #f8f9fd!important; }
+
+@import "~bootstrap/dist/css/bootstrap.css"
