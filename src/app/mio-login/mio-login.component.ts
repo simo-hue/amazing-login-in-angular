@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MioLoginComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+  username: string;
+  password: string;
+  loginFail: boolean;
+
+  encrypt: string;
+
+  utentiJson: User = {
+    username: "",
+    password: ""
+  };
+
+  
 
 }
